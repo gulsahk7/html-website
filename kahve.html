@@ -17,7 +17,13 @@
         LOGO
       </a>
 
-      <nav class="nav-links">
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
         <a href="#">Home</a>
         <a href="#">Products</a>
         <div class="dropdown">
@@ -628,6 +634,36 @@
           justify-content: space-between;
         }
       }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+      }
+      .hamburger span {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.3s;
+        border-radius: 2px;
+      }
+      @media (max-width: 480px) {
+        .hamburger {
+          display: flex;
+        }
+        .hamburger.active span:nth-child(1) {
+          transform: rotate(-45deg) translate(-8px, 8px);
+        }
+        .hamburger.active span:nth-child(2) {
+          opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
+      }
       .nav-links {
         display: flex;
         align-items: center;
@@ -656,6 +692,13 @@
           padding: 10px 0;
           display: none;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease;
+        }
+        .nav-links.active {
+          display: flex;
+          max-height: 500px;
         }
       }
       .nav-links a {
@@ -871,6 +914,24 @@
         font-weight: 400;
       }
     </style>
+    <script>
+      // Hamburger menu toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      // Menüdeki link'e tıklandığında menüyü kapat
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+        });
+      });
+    </script>
     <div class="banner-hero">
       <img src="/Gulsah-images/ödev1.jpg" alt="" />
 
