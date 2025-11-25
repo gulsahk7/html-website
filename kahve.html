@@ -700,8 +700,10 @@
           flex-direction: column;
           position: absolute;
           top: 100%;
-          left: 0;
+          left: auto;
           right: 0;
+          width: auto;
+          min-width: 200px;
           background: #f8f8f8;
           padding: 0;
           display: none;
@@ -725,9 +727,6 @@
         background: transparent;
         transition: all 0.2s ease;
         border-left: 3px solid transparent;
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
       }
       .nav-links a:hover {
         color: #e58a57;
@@ -744,8 +743,6 @@
           font-size: 16px !important;
           padding: 10px 15px;
           border-left: none;
-          display: inline-block;
-          width: auto;
         }
         .nav-links a:hover {
           color: #e58a57;
@@ -800,6 +797,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        margin-left: 120px;
         text-decoration: none;
         transition: color 0.3s ease;
       }
