@@ -65,6 +65,16 @@
         height: 370px;
         overflow: hidden;
       }
+      @media (max-width: 768px) {
+        .banner-hero {
+          height: 250px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner-hero {
+          height: 200px;
+        }
+      }
       .banner-hero img {
         width: 100%;
         height: 100%;
@@ -80,6 +90,16 @@
         color: #fff;
         text-align: left;
       }
+      @media (max-width: 768px) {
+        .banner-content {
+          left: 5%;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner-content {
+          left: 3%;
+        }
+      }
       .banner-title {
         display: flex;
         align-items: flex-start;
@@ -91,10 +111,30 @@
         margin: 0;
         line-height: 1.1;
       }
+      @media (max-width: 768px) {
+        .banner-title h1 {
+          font-size: 32px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner-title h1 {
+          font-size: 24px;
+        }
+      }
       .banner-content p {
         font-size: 22px;
         margin-bottom: 20px;
         margin-top: 10px;
+      }
+      @media (max-width: 768px) {
+        .banner-content p {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner-content p {
+          font-size: 14px;
+        }
       }
       .banner-btn {
         background: orange;
@@ -140,6 +180,18 @@
         font-weight: 450;
         padding-top: 30px;
       }
+      @media (max-width: 768px) {
+        .banner1 {
+          font-size: 28px;
+          padding-top: 20px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner1 {
+          font-size: 24px;
+          padding-top: 15px;
+        }
+      }
       .banner2 {
         font-size: 20px;
         width: 70%;
@@ -148,6 +200,22 @@
         padding-bottom: 30px;
         padding-top: 10px;
         color: gray;
+      }
+      @media (max-width: 768px) {
+        .banner2 {
+          font-size: 16px;
+          width: 85%;
+          padding-bottom: 20px;
+          padding-top: 10px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner2 {
+          font-size: 14px;
+          width: 90%;
+          padding-bottom: 15px;
+          padding-top: 10px;
+        }
       }
       .banner3 {
         display: flex;
@@ -160,12 +228,31 @@
         overflow: hidden;
         border: 2px solid black;
         box-sizing: border-box;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 768px) {
+        .banner3 {
+          flex-direction: column;
+          border: none;
+        }
       }
       .image-text {
         position: relative;
         flex: 1 1 33.333%;
         height: 200px;
         overflow: hidden;
+      }
+      @media (max-width: 768px) {
+        .image-text {
+          flex: 1 1 50%;
+          height: 150px;
+        }
+      }
+      @media (max-width: 480px) {
+        .image-text {
+          flex: 1 1 100%;
+          height: 150px;
+        }
       }
       .image-text img {
         width: 100%;
@@ -192,6 +279,16 @@
         text-align: center;
         width: 100%;
       }
+      @media (max-width: 768px) {
+        .overlay-text {
+          font-size: 2rem;
+        }
+      }
+      @media (max-width: 480px) {
+        .overlay-text {
+          font-size: 1.5rem;
+        }
+      }
       .products-title {
         text-align: center;
         color: #e58a57;
@@ -204,8 +301,32 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 24px;
-        width: 75%;
+        width: 90%;
+        max-width: 1200px;
         margin: 0 auto;
+        padding: 0 15px;
+      }
+      @media (max-width: 1024px) {
+        .grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          width: 95%;
+        }
+      }
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          width: 95%;
+        }
+      }
+      @media (max-width: 480px) {
+        .grid {
+          grid-template-columns: 1fr;
+          gap: 12px;
+          width: 100%;
+          padding: 0 10px;
+        }
       }
       .product-card {
         border: 1px solid #ddd;
@@ -234,6 +355,16 @@
         color: #e58a57;
         margin-bottom: 8px;
         font-weight: 450;
+      }
+      @media (max-width: 768px) {
+        .product-title {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 480px) {
+        .product-title {
+          font-size: 14px;
+        }
       }
       .product-desc {
         font-size: 0.95rem;
@@ -286,6 +417,18 @@
         font-weight: normal;
         padding-top: 30px;
       }
+      @media (max-width: 768px) {
+        .banner4 {
+          font-size: 28px;
+          padding-top: 20px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner4 {
+          font-size: 24px;
+          padding-top: 15px;
+        }
+      }
       .banner5 {
         font-size: 20px;
         width: 70%;
@@ -294,6 +437,20 @@
         padding-bottom: 30px;
         padding-top: 10px;
         color: gray;
+      }
+      @media (max-width: 768px) {
+        .banner5 {
+          font-size: 16px;
+          width: 85%;
+          padding-bottom: 20px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner5 {
+          font-size: 14px;
+          width: 90%;
+          padding-bottom: 15px;
+        }
       }
       .banner6 {
         display: block;
@@ -304,6 +461,20 @@
         border-radius: 50%;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
       }
+      @media (max-width: 768px) {
+        .banner6 {
+          width: 400px;
+          height: 300px;
+          margin: -10px auto;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner6 {
+          width: 250px;
+          height: 200px;
+          margin: -10px auto;
+        }
+      }
       .banner7 {
         font-size: 35px;
         text-align: center;
@@ -312,6 +483,20 @@
         font-weight: 450;
         padding-top: 30px;
         margin-bottom: 40px;
+      }
+      @media (max-width: 768px) {
+        .banner7 {
+          font-size: 28px;
+          padding-top: 20px;
+          margin-bottom: 30px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner7 {
+          font-size: 24px;
+          padding-top: 15px;
+          margin-bottom: 20px;
+        }
       }
       .banner8 {
         width: 100vw;
@@ -325,6 +510,18 @@
         background-position: 28% 46%;
         background-repeat: no-repeat;
         clip-path: inset(0 0 120px 0);
+      }
+      @media (max-width: 768px) {
+        .banner8 {
+          height: 300px;
+          clip-path: inset(0 0 100px 0);
+        }
+      }
+      @media (max-width: 480px) {
+        .banner8 {
+          height: 200px;
+          clip-path: inset(0 0 80px 0);
+        }
       }
       .banner8::before {
         content: "";
@@ -354,6 +551,20 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         width: 70%;
       }
+      @media (max-width: 768px) {
+        .banner9 {
+          font-size: 16px;
+          width: 85%;
+          margin: -80px auto 20px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner9 {
+          font-size: 14px;
+          width: 90%;
+          margin: -60px auto 15px;
+        }
+      }
       .banner10 {
         font-size: 30px;
         text-align: center;
@@ -363,11 +574,31 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 450;
       }
+      @media (max-width: 768px) {
+        .banner10 {
+          font-size: 24px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner10 {
+          font-size: 20px;
+        }
+      }
       .contact-info {
         text-align: center;
         color: grey;
         font-size: 20px;
         line-height: 1.5;
+      }
+      @media (max-width: 768px) {
+        .contact-info {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 480px) {
+        .contact-info {
+          font-size: 14px;
+        }
       }
       .contact-info i {
         margin-right: 8px;
@@ -384,13 +615,48 @@
         position: sticky;
         top: 0;
         z-index: 1000;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 768px) {
+        .navbar {
+          padding: 5px 15px;
+        }
+      }
+      @media (max-width: 480px) {
+        .navbar {
+          padding: 5px 10px;
+          justify-content: space-between;
+        }
       }
       .nav-links {
         display: flex;
         align-items: center;
-        gap: -20px;
+        gap: 0;
         position: relative;
         left: -90px;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 768px) {
+        .nav-links {
+          left: -40px;
+          gap: 5px;
+        }
+      }
+      @media (max-width: 480px) {
+        .nav-links {
+          left: 0;
+          gap: 0;
+          width: 100%;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: white;
+          padding: 10px 0;
+          display: none;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
       }
       .nav-links a {
         color: #333;
@@ -486,10 +752,29 @@
         padding: 0 10px;
         color: black;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        gap: 20px;
+      }
+      @media (max-width: 768px) {
+        .footer-container {
+          justify-content: center;
+          gap: 15px;
+        }
       }
       .footer-section {
         flex: 1 1 250px;
         margin: 10px;
+      }
+      @media (max-width: 768px) {
+        .footer-section {
+          flex: 1 1 40%;
+          margin: 8px;
+        }
+      }
+      @media (max-width: 480px) {
+        .footer-section {
+          flex: 1 1 100%;
+          margin: 5px 0;
+        }
       }
       .footer-section h3 {
         font-size: 20px;
@@ -523,6 +808,14 @@
       .newsletter-box {
         display: flex;
         margin-top: 10px;
+        flex-direction: column;
+        gap: 8px;
+      }
+      @media (min-width: 481px) {
+        .newsletter-box {
+          flex-direction: row;
+          gap: 0;
+        }
       }
 
       .newsletter-box input {
@@ -530,6 +823,12 @@
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px 0 0 4px;
+      }
+      @media (max-width: 480px) {
+        .newsletter-box input {
+          border-radius: 4px;
+          width: 100%;
+        }
       }
       .newsletter-box button {
         background-color: #ff9800;
@@ -539,6 +838,12 @@
         border-radius: 0 4px 4px 0;
         cursor: pointer;
         transition: background 0.3s;
+      }
+      @media (max-width: 480px) {
+        .newsletter-box button {
+          border-radius: 4px;
+          width: 100%;
+        }
       }
       .newsletter-box button:hover {
         background-color: #e68a00;
