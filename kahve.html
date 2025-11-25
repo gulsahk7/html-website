@@ -246,18 +246,19 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        gap: 0;
+        gap: 1px;
         font-size: 0;
         line-height: 0;
         overflow: hidden;
-        border: 1px solid #ddd;
+        border: 2px solid #333;
         box-sizing: border-box;
-        background: #f9f9f9;
+        background: #333;
       }
       @media (max-width: 768px) {
         .banner3 {
           grid-template-columns: 1fr;
-          border: 1px solid #ddd;
+          border: 2px solid #333;
+          gap: 1px;
         }
       }
       .image-text {
@@ -719,11 +720,14 @@
         color: #666;
         text-decoration: none;
         font-size: 16px !important;
-        padding: 12px 20px;
+        padding: 15px 20px;
         border-radius: 0;
         background: transparent;
         transition: all 0.2s ease;
         border-left: 3px solid transparent;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
       }
       .nav-links a:hover {
         color: #e58a57;
@@ -740,6 +744,8 @@
           font-size: 16px !important;
           padding: 10px 15px;
           border-left: none;
+          display: inline-block;
+          width: auto;
         }
         .nav-links a:hover {
           color: #e58a57;
