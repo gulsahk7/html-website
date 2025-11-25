@@ -241,7 +241,8 @@
         }
       }
       .banner3 {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
         margin: 0;
         padding: 0;
@@ -249,14 +250,14 @@
         font-size: 0;
         line-height: 0;
         overflow: hidden;
-        border: 2px solid black;
+        border: 1px solid #ddd;
         box-sizing: border-box;
-        flex-wrap: wrap;
+        background: #f9f9f9;
       }
       @media (max-width: 768px) {
         .banner3 {
-          flex-direction: column;
-          border: none;
+          grid-template-columns: 1fr;
+          border: 1px solid #ddd;
         }
       }
       .image-text {
@@ -274,7 +275,7 @@
       @media (max-width: 480px) {
         .image-text {
           flex: 1 1 100%;
-          height: 150px;
+          height: 180px;
         }
       }
       .image-text img {
@@ -663,7 +664,7 @@
       .hamburger span {
         width: 24px;
         height: 2.5px;
-        background-color: #666;
+        background-color: #e58a57;
         transition: background-color 0.3s ease;
         border-radius: 2px;
       }
@@ -673,7 +674,7 @@
           padding: 5px;
         }
         .hamburger.active span {
-          background-color: #e58a57;
+          background-color: #999;
         }
       }
       .nav-links {
@@ -793,7 +794,6 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        margin-left: 120px;
         text-decoration: none;
         transition: color 0.3s ease;
       }
