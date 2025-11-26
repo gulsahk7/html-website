@@ -987,7 +987,6 @@
       }
     </style>
     <script>
-      // Hamburger menu toggle
       const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("navLinks");
 
@@ -996,7 +995,6 @@
         navLinks.classList.toggle("active");
       });
 
-      // Menüdeki link'e tıklandığında menüyü kapat
       navLinks.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
           hamburger.classList.remove("active");
